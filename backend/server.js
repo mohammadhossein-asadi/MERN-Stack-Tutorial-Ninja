@@ -35,6 +35,7 @@ const start = async () => {
 start();
 
 // # Secound method
+
 // mongoose
 //   .connect(process.env.MONGO_URI)
 //   .then(() => {
