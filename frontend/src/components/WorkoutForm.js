@@ -46,7 +46,7 @@ const WorkoutForm = () => {
 
       <label>Load (in kg):</label>
       <input
-        type="text"
+        type="number"
         onChange={(e) => setLoad(e.target.value)}
         value={load}
       />
@@ -59,6 +59,7 @@ const WorkoutForm = () => {
       />
 
       <button>Add Workout</button>
+      {error && <div className="error">{error}</div>}
     </form>
   );
 };
